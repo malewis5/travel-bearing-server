@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
     root: path.join(__dirname),
   };
 
-  var fileName = '/library/test.ics';
+  var fileName = '/public/test.ics';
   res.sendFile(fileName, options, function (err) {
     if (err) {
       next(err);
